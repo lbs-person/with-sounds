@@ -1,0 +1,5 @@
+# 把 music.example.com 换成你的域名，DNS 指向这台服务器。
+music.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:8080
+}

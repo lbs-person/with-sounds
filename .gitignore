@@ -1,0 +1,27 @@
+.gradle/
+.gradle-home/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+server/data/
+server/*.log
+
+# Local test / emulator scratch
+.android/
+.android-sdk/
+.android-avd/
+.emulator-home/
+.robolectric-deps/
+.kotlin/
+.testdeps/
+.tmp/
+tools/__pycache__/
+*-log.txt
+build-log.txt
+compile-log.txt
+install.out.log
+install.err.log

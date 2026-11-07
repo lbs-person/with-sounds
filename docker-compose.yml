@@ -1,0 +1,19 @@
+services:
+  tongpin:
+    build:
+      context: ./server
+    container_name: tongpin-relay
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      DATA_DIR: "/data"
+      SERVER_NAME: "同频电台"
+      # 如果前面挂了 Caddy / Nginx，把公网地址填在这里，只用于启动日志展示。
+      # PUBLIC_URL: "https://music.example.com"
+    volumes:
+      - tongpin-data:/data
+
+volumes:
+  tongpin-data:
